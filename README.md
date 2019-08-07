@@ -13,3 +13,7 @@
 ```bash
 yarn add gatsby-plugin-stripe
 ```
+
+## 04: Stripe Checkout
+
+Stripe Test Credit Card: 4242424242424242
