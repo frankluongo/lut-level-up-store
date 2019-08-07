@@ -7,3 +7,9 @@
 - Went to Settings > Stripe Apps > Checkout
 - Enabled "Checkout Client Integration"
 - Created a test product
+
+## 03: Connecting Stripe to Gatsby
+
+```bash
+yarn add gatsby-plugin-stripe
+```
