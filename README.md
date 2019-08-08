@@ -32,9 +32,33 @@ Stripe Test Credit Card: 4242424242424242
 
 ## 07: Importing Products From Stripe
 
-Add Stripe as a data source
+Add Stripe as a data source and Dot Env to use Variables
 
 ```bash
 yarn add gatsby-source-stripe
+yarn add dotenv
 ```
 
+- Add Stripe as a Data Source
+- Use DotEnv to hide Stripe's Secret Key
+- Create a query of our products
+
+```graphql
+{
+  allStripeSku {
+    edges {
+      node {
+        id
+        attributes {
+          name
+        }
+        product {
+          name
+          id
+        }
+        price
+      }
+    }
+  }
+}
+```
