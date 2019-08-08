@@ -29,3 +29,12 @@ Stripe Test Credit Card: 4242424242424242
 - In Stripe, create variant SKU's for a product
 - Use a select form to map sku's to product selection
 - Move Product to its own component for reusability
+
+## 07: Importing Products From Stripe
+
+Add Stripe as a data source
+
+```bash
+yarn add gatsby-source-stripe
+```
+
