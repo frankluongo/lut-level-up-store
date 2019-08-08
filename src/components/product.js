@@ -1,8 +1,8 @@
 import React, { useState } from "react"
 
-const Product = () => {
+const Product = ({skus, product}) => {
   const stripe = window.Stripe(process.env.GATSBY_STRIPE_PUBLIC_API);
-  const [sku, setSku] = useState('sku_FaO3p0TGu4gMNN')
+  const [sku, setSku] = useState(skus[0].node.id)
 
   const placeOrder = () => {
     stripe.redirectToCheckout({
@@ -21,11 +21,9 @@ const Product = () => {
   return (
     <article>
       <img src="https://picsum.photos/340/340" alt="Level Up T-Shirt"/>
-      <h3>Level Up T-Shirt</h3>
+      <h3>{product.name}</h3>
       <select name="Shirt Size" id="shirt-size" value={sku} onChange={(e) => {setSku(e.target.value)}}>
-        <option value="sku_FaO3p0TGu4gMNN">Small</option>
-        <option value="sku_FaO34nona2LOYy">Medium</option>
-        <option value="sku_FaO3oiULGlRdCD">Large</option>
+        {skus.map(edge => <option key={edge.node.id} value={edge.node.id}>{edge.node.attributes.name}</option>)}
       </select>
       <button
         onClick={placeOrder}

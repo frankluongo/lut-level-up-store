@@ -62,3 +62,7 @@ yarn add dotenv
   }
 }
 ```
+
+## 08: Multiple Products
+
+- Using stripe as a data source, map over products and skus and pass that data into the product component
