@@ -17,3 +17,9 @@ yarn add gatsby-plugin-stripe
 ## 04: Stripe Checkout
 
 Stripe Test Credit Card: 4242424242424242
+
+## 05: Redirects After a Completed Order
+
+- Move Purchasing action into it's own function
+- Create a button to handle purchase
+- Create success and cancellation pages for redirects
