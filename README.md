@@ -23,3 +23,9 @@ Stripe Test Credit Card: 4242424242424242
 - Move Purchasing action into it's own function
 - Create a button to handle purchase
 - Create success and cancellation pages for redirects
+
+## 06: Adding Skus and Variants
+
+- In Stripe, create variant SKU's for a product
+- Use a select form to map sku's to product selection
+- Move Product to its own component for reusability
