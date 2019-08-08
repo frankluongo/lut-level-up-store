@@ -25,7 +25,6 @@ const IndexPage = () => {
   return (
     <Layout>
       <SEO title="Home" />
-      <h1>Level Up Store</h1>
       <section>
         <article>
           <img src="https://picsum.photos/340/340" alt="Level Up T-Shirt"/>
